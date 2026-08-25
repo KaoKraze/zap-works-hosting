@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games â€” Zap Works</title>
+  <meta name="description" content="Explore all of Zap Works' Roblox experiences. Battle, survive, climb, and create in immersive worlds." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ======================= HEADER ======================= -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="nav__brand">
+        <span class="nav__logo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 2 4 14h6l-1.5 8L19 10h-6l.5-8z"/></svg></span>
+        <span>Zap Works</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/games">Games</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <div class="nav__social">
+        <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.roblox.com/communities/33798992/Zaps-Games#!/about" target="_blank" rel="noopener" aria-label="Roblox Group">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 2.3 2.4 4.9 4.4 21.7 21.6 19.1z"/></svg>
+        </a>
+        <a href="/contact" class="btn btn-primary nav__cta">Contact Us</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="width:24px;height:24px"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__top">
+      <a href="/" class="nav__brand"><span class="nav__logo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 2 4 14h6l-1.5 8L19 10h-6l.5-8z"/></svg></span> Zap Works</a>
+      <button class="icon-btn" id="mobileNavClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About Us</a>
+      <a href="/games" class="active">Games</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="mobile-nav__social">
+      <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a class="icon-btn" href="https://www.roblox.com/communities/33798992/Zaps-Games#!/about" target="_blank" rel="noopener" aria-label="Roblox Group">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 2.3 2.4 4.9 4.4 21.7 21.6 19.1z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ======================= PAGE HERO ======================= -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="section__tag">Experiences</div>
+      <h1>Play our worlds.</h1>
+      <p>Every experience below is crafted by Zap Works and our community of creators. Jump into a server and start playing.</p>
+    </div>
+  </section>
+
+  <!-- ======================= TOOLBAR ======================= -->
+  <div class="container">
+    <div class="toolbar">
+      <span class="toolbar__label">Sort by</span>
+      <div class="sort-group" id="sortBar">
+        <button class="sort-btn active" data-sort="most">Most Active</button>
+        <button class="sort-btn" data-sort="least">Least Active</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= GRID ======================= -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="games-grid" id="experiencesGrid">
+        <div class="grid-empty">Loading experiencesâ€¦</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav__brand"><span class="nav__logo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 2 4 14h6l-1.5 8L19 10h-6l.5-8z"/></svg></span> Zap Works</a>
+          <p>Unleashing a new era of Roblox experiences. Building immersive worlds played by millions.</p>
+          <div class="footer-social">
+            <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a class="icon-btn" href="https://www.roblox.com/communities/33798992/Zaps-Games#!/about" target="_blank" rel="noopener" aria-label="Roblox Group">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 2.3 2.4 4.9 4.4 21.7 21.6 19.1z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/games">Games</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="/contact">Interested in working with us? We'd love to hear from you.</a></li>
+            <li><a href="/contact">Contact Us â€º</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Â© 2026 Zap Works. All rights reserved.</span>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/live.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
