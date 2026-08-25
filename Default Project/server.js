@@ -346,7 +346,7 @@ server.on("error", (err) => {
   process.exit(1);
 });
 
-server.listen(PORT, () => {
-  console.log(`[ZapWorks] Live stats server running at http://localhost:${PORT}`);
+server.listen(PORT, "0.0.0.0", () => {
+  console.log(`[ZapWorks] Live stats server running on ${PORT}`);
   console.log(`[ZapWorks] Tracking ${games.length} games, ${groups.length} groups, ${discord.length} Discord servers`);
 });
