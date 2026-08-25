@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Zap Works</title>
+  <meta name="description" content="Meet the team behind Zap Works — the developers, builders, and creators making immersive Roblox experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ======================= HEADER ======================= -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="nav__brand">
+        <span class="nav__logo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 2 4 14h6l-1.5 8L19 10h-6l.5-8z"/></svg></span>
+        <span>Zap Works</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/games">Games</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <div class="nav__social">
+        <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.roblox.com/communities/33798992/Zaps-Games#!/about" target="_blank" rel="noopener" aria-label="Roblox Group">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.5 4.5L19.5 4.5L19.5 19.5L4.5 19.5ZM9.5 9.5L9.5 14.5L14.5 14.5L14.5 9.5Z" transform="rotate(22 12 12)" fill-rule="evenodd"/></svg>
+        </a>
+        <a href="/contact" class="btn btn-primary nav__cta">Contact Us</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="width:24px;height:24px"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__top">
+      <a href="/" class="nav__brand"><span class="nav__logo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 2 4 14h6l-1.5 8L19 10h-6l.5-8z"/></svg></span> Zap Works</a>
+      <button class="icon-btn" id="mobileNavClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about" class="active">About Us</a>
+      <a href="/games">Games</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="mobile-nav__social">
+      <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a class="icon-btn" href="https://www.roblox.com/communities/33798992/Zaps-Games#!/about" target="_blank" rel="noopener" aria-label="Roblox Group">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.5 4.5L19.5 4.5L19.5 19.5L4.5 19.5ZM9.5 9.5L9.5 14.5L14.5 14.5L14.5 9.5Z" transform="rotate(22 12 12)" fill-rule="evenodd"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ======================= PAGE HERO ======================= -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="section__tag">About Us</div>
+      <h1>The people behind Zap.</h1>
+      <p>A tight-knit crew of developers, builders, and designers united by one goal — creating the best Roblox experiences out there.</p>
+    </div>
+  </section>
+
+  <!-- ======================= ABOUT ======================= -->
+  <section class="section">
+    <div class="container about-grid">
+      <div class="about-lead">
+        <h2 class="section__title" style="margin-bottom:20px;">Who we are.</h2>
+        <p>Zap Works is an independent Roblox development studio built from scratch — zero capital, pure passion. We design, build, and ship immersive experiences that millions of players return to every single day.</p>
+        <p>From high-energy obbies to competitive simulators and cozy social worlds, every game we make is a playground for creativity. We believe in games that feel alive, communities that feel welcoming, and worlds worth getting lost in.</p>
+        <div class="stats-row">
+          <div class="stat-mini"><div class="stat-mini__value">10.6M+</div><div class="stat-mini__label">Community Members</div></div>
+          <div class="stat-mini"><div class="stat-mini__value">13+</div><div class="stat-mini__label">Experiences</div></div>
+          <div class="stat-mini"><div class="stat-mini__value">1,452</div><div class="stat-mini__label">Concurrent Players</div></div>
+          <div class="stat-mini"><div class="stat-mini__value">10+</div><div class="stat-mini__label">Brand Deals</div></div>
+        </div>
+      </div>
+
+      <!-- ======================= TEAM ======================= -->
+      <div>
+        <div class="section__header" style="margin-bottom:24px;">
+          <div>
+            <h2 class="section__title">Meet the team.</h2>
+            <p class="section__sub">The creators and builders making it all happen.</p>
+          </div>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-card__avatar" style="background:linear-gradient(135deg,#2f6bff,#7aa5ff);">Z</div>
+            <div class="team-card__name">Zap</div>
+            <div class="team-card__role">Founder & Lead Developer</div>
+            <div class="team-card__social">
+              <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__avatar" style="background:linear-gradient(135deg,#ff5f6d,#ffc371);">A</div>
+            <div class="team-card__name">Aria</div>
+            <div class="team-card__role">Game Designer</div>
+            <div class="team-card__social">
+              <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__avatar" style="background:linear-gradient(135deg,#11998e,#38ef7d);">M</div>
+            <div class="team-card__name">Milo</div>
+            <div class="team-card__role">3D Artist</div>
+            <div class="team-card__social">
+              <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__avatar" style="background:linear-gradient(135deg,#f7971e,#ffd200);">K</div>
+            <div class="team-card__name">Kai</div>
+            <div class="team-card__role">Community Manager</div>
+            <div class="team-card__social">
+              <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__avatar" style="background:linear-gradient(135deg,#8e2de2,#4a00e0);">R</div>
+            <div class="team-card__name">Rex</div>
+            <div class="team-card__role">Programming</div>
+            <div class="team-card__social">
+              <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__avatar" style="background:linear-gradient(135deg,#43cea2,#185a9d);">L</div>
+            <div class="team-card__name">Luna</div>
+            <div class="team-card__role">UI Designer</div>
+            <div class="team-card__social">
+              <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__avatar" style="background:linear-gradient(135deg,#f953c6,#b91d73);">S</div>
+            <div class="team-card__name">Soren</div>
+            <div class="team-card__role">Sound & Music</div>
+            <div class="team-card__social">
+              <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__avatar" style="background:linear-gradient(135deg,#2193b0,#6dd5ed);">V</div>
+            <div class="team-card__name">Vex</div>
+            <div class="team-card__role">QA Tester</div>
+            <div class="team-card__social">
+              <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CTA ======================= -->
+  <section class="section section--soft">
+    <div class="container">
+      <div class="cta">
+        <div>
+          <h2>Want to join the Zap crew?</h2>
+          <p>We're always on the lookout for talented builders, artists, and creators.</p>
+        </div>
+        <a href="/contact" class="btn">Get in Touch <span class="arrow">›</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav__brand"><span class="nav__logo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 2 4 14h6l-1.5 8L19 10h-6l.5-8z"/></svg></span> Zap Works</a>
+          <p>Unleashing a new era of Roblox experiences. Building immersive worlds played by millions.</p>
+          <div class="footer-social">
+            <a class="icon-btn" href="https://x.com/roblox_ZAP" target="_blank" rel="noopener" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a class="icon-btn" href="https://www.roblox.com/communities/33798992/Zaps-Games#!/about" target="_blank" rel="noopener" aria-label="Roblox Group">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.5 4.5L19.5 4.5L19.5 19.5L4.5 19.5ZM9.5 9.5L9.5 14.5L14.5 14.5L14.5 9.5Z" transform="rotate(22 12 12)" fill-rule="evenodd"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/games">Games</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="/contact">Interested in working with us? We'd love to hear from you.</a></li>
+            <li><a href="/contact">Contact Us ›</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Zap Works. All rights reserved.</span>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
