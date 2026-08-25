@@ -180,7 +180,9 @@ const ZAP_PARTNERS = [
   { name: "Mazda", file: "mazda.png" },
   { name: "Zenvo", file: "zenvo.png" },
   { name: "FIFA", file: "fifa.png" },
-  { name: "Old Navy", file: "old-navy.png" }
+  { name: "Old Navy", file: "old-navy.png" },
+  { name: "Maris", file: "maris.png" },
+  { name: "Indigo", file: "indigo.png" }
 ];
 
 function setupPartners() {
