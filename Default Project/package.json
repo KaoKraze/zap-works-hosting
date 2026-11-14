@@ -1,0 +1,9 @@
+{
+  "name": "zap-works",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Zap Works studio site with live Roblox + Discord stats",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
