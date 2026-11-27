@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Zap Works — Under maintenance</title>
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon-32.png" />
+<link rel="apple-touch-icon" href="/images/brand/apple-touch-icon.png" />
+<style>
+  /* Shown by server.js while the Railway variable MAINTENANCE_MODE is on. No scripts. */
+  @font-face { font-family: "Archivo"; src: url("/fonts/archivo-var-latin.woff2") format("woff2"); font-weight: 100 900; font-stretch: 62% 125%; font-display: swap; }
+  @font-face { font-family: "Inter"; src: url("/fonts/inter-var-latin.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+  @font-face { font-family: "JetBrains Mono"; src: url("/fonts/jetbrains-mono-var-latin.woff2") format("woff2"); font-weight: 400 600; font-display: swap; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: grid; place-items: center; padding: 32px 24px;
+    background: #0a0a0b; color: #f3f3f0;
+    font-family: "Inter", system-ui, sans-serif; -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+  .glow {
+    position: fixed; inset: -20vmax; pointer-events: none;
+    background:
+      radial-gradient(40vmax 30vmax at 50% 42%, rgba(106, 92, 255, 0.20), transparent 70%),
+      radial-gradient(30vmax 22vmax at 38% 60%, rgba(47, 107, 255, 0.14), transparent 70%);
+  }
+  main { position: relative; max-width: 640px; text-align: center; }
+  .bolt {
+    width: 76px; height: 76px; margin: 0 auto 36px; display: grid; place-items: center;
+    border-radius: 20px; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 60px rgba(106, 92, 255, 0.25);
+  }
+  .bolt img { width: 40px; height: 40px; object-fit: contain; }
+  .tag {
+    display: inline-block; margin-bottom: 22px; padding: 6px 12px; border-radius: 999px;
+    font: 500 0.72rem/1 "JetBrains Mono", ui-monospace, monospace; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #b9b4ff; background: rgba(106, 92, 255, 0.12); border: 1px solid rgba(106, 92, 255, 0.28);
+  }
+  h1 {
+    margin: 0 0 18px; font-family: "Archivo", "Inter", sans-serif; font-stretch: 112%; font-weight: 750;
+    font-size: clamp(2.2rem, 6.2vw, 4rem); line-height: 1.02; letter-spacing: -0.025em;
+  }
+  h1 span { background: linear-gradient(90deg, #2f6bff, #6a5cff 50%, #a45cff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  p { margin: 0 auto; max-width: 30em; color: #8a8a91; font-size: clamp(1rem, 1.6vw, 1.15rem); line-height: 1.6; }
+  @media (prefers-reduced-motion: no-preference) {
+    .bolt { animation: pulse 3.2s ease-in-out infinite; }
+    @keyframes pulse { 50% { box-shadow: 0 0 90px rgba(106, 92, 255, 0.45); } }
+  }
+</style>
+</head>
+<body>
+<div class="glow" aria-hidden="true"></div>
+<main>
+  <div class="bolt"><img src="/images/brand/bolt-white.png" alt="Zap Works" /></div>
+  <span class="tag">Maintenance</span>
+  <h1>Zap Works is <span>under maintenance</span></h1>
+  <p>{{MESSAGE}}</p>
+</main>
+</body>
+</html>
